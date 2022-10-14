@@ -13,12 +13,20 @@ global:
     auth:
       # Disable the Identity authentication
       # it will fall back to basic-auth: demo/demo as default user
-      enabled: false
+      enabled: true
 
 identity:
-  enabled: false
+  enabled: true
+  clientSecret: 'xyz'
+  clientId: 'java'
 
 optimize:
+  enabled: false
+
+operate:
+  enabled: false
+
+tasklist:
   enabled: false
 
 zeebe:
